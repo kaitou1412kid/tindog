@@ -1,40 +1,37 @@
 body {
     font-family: "Montserrat";
+    text-align: center;
 
 }
 
-#title {
-    background-color: #ff4c68;
-    color: white;
-    padding-bottom: 50px;
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat';
+    font-weight: 700;
 }
 
-.container-fluid {
-    padding: 3% 15% 6%;
+p {
+    color: #8f8f8f;
 }
 
-
-h1 {
+/* Heading */
+.big-heading {
     font-family: 'Montserrat', sans-serif;
     font-size: 3.5rem;
     line-height: 1.5;
     font-weight: 900;
 }
 
-h2 {
-    font-weight: 700;
+.section-heading {
     font-size: 3rem;
     line-height: 1.5;
 }
 
-h3 {
-    font-weight: 700;
-    font-size: 1.45rem;
+/* containr section */
+.container-fluid {
+    padding: 7% 15%;
 }
 
-p {
-    color: #8f8f8f;
-}
+
 
 /* Navigation bar */
 
@@ -64,6 +61,17 @@ p {
     margin: 5% 3% 5% 0;
 }
 
+/* title section */
+#title {
+    background-color: #ff4c68;
+    color: white;
+    padding-bottom: 50px;
+    text-align: left;
+}
+
+#title .container-fluid {
+    padding: 3% 15% 6%;
+}
 /* title image */
 .title-image {
     /*width: 60%;*/
@@ -75,14 +83,16 @@ p {
 
 /* feature section*/
 #features {
-    padding: 7% 15%;
     background-color: white;
     position: relative;
 
 }
 
+.feature-title {
+    font-size: 1.45rem;
+}
+
 .feature-box {
-    text-align: center;
     padding: 5%;
 }
 
@@ -98,9 +108,13 @@ p {
 /* testimonial section */
 
 #testimonials {
-    text-align: center;
     background-color: #ef8172;
     color: #fff;
+}
+
+.testimonial-text {
+    font-size: 3rem;
+    line-height: 1.5;
 }
 
 .testimonial-image {
@@ -109,14 +123,10 @@ p {
     margin: 20px;
 }
 
-.carousel-item {
-    padding : 7% 15%;
-}
 
 
 #press {
     background-color: #ef8172;
-    text-align: center;
     padding-bottom: 3%;
 }
 
@@ -128,11 +138,30 @@ p {
 /* pricing section */
 #pricing {
     padding : 100px;
-    text-align: center;
+}
+
+.price-text {
+    font-size: 3rem;
+    line-height: 1.5;
 }
 
 .pricing-coloumn {
     padding: 3% 2%;
+}
+
+/* call to action */
+#cta {
+    background-color: #ff4c68;
+    color: #fff;
+}
+
+/* footer */
+#footer {
+    background-color: #fff;
+}
+
+.footer-icon {
+    margin: 20px 10px ;
 }
 
 @media (max-width:1028px) {
@@ -144,31 +173,4 @@ p {
         width: 50%;
         transform: rotate(0);
     }
-}
-
-/* call to action */
-#cta {
-    background-color: #ff4c68;
-    padding: 7% 15%;
-    color: #fff;
-    text-align: center;
-}
-
-.cta-text {
-    font-family: 'Montserrat';
-    font-weight: 900;
-    font-size: 3.5rem;
-    line-height: 1.5;
-}
-
-
-/* footer */
-#footer {
-    background-color: #fff;
-    padding:7% 15%;
-    text-align: center;
-}
-
-.footer-icon {
-    margin: 20px 10px ;
 }
